@@ -3,3 +3,5 @@
 `mkdir logs`
 
 `COUNT=2 MAX=10000 URL=http://node-11.mai.ru/increment ./load.sh ./load.py`
+
+`sort full.log | uniq -d | grep -v "error" | wc -l`
